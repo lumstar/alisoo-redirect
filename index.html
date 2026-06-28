@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting to LessPad...</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://lesspad.com/">
+  <script>
+    var target = 'https://lesspad.com' + window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace(target);
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a id="redirect-link" href="https://lesspad.com/">LessPad</a>...</p>
+  <script>
+    document.getElementById('redirect-link').href = target;
+  </script>
+</body>
+</html>
